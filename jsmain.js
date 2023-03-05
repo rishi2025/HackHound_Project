@@ -10,7 +10,7 @@ function validateLogin() {
     {
         if (usern === users[i].username && passw === users[i].password) {
         // Redirect to home page or show success message
-            window.location.href = "index.html";
+            window.location.href = "indexmain.html";
         }
     }
     // Show error message

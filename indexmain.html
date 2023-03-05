@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Login Page</title>
-    <link rel="stylesheet" href="stylemain.css">
-</head>
-<body>
-    <div class="divmain">
-        <h1>Login to Your Account</h1>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br><br>
-            <input type="button" value="Login" onclick="validateLogin()">
-            <input type="button" value="Sign Up" onclick="proceedSignup()">
-        </form>
-        <p id="error-message"></p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aim Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="left">
+        <h1 id="Hed">Aim Game</h1>
+        <p id="intro">Click on the targets as fast as you can!</p>
+        <div id="scoreBoard">
+          <p>Score: <span id="score">0</span></p>
+          <p>Time: <span id="timer">30</span></p>
+        </div>
+        <button id="startButton">Start Game</button>
+        <button id="playAgainButton">Play Again</button>
+        <div id="highScores">
+          <h2>High Scores</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="highScoreList"></tbody>
+          </table>
+        </div>
+      </div>
+      <div id="right">
+        <div id="restrictedArea"></div>
+        <div id="target"></div>
+      </div>
     </div>
-</body>
-<script src="jsmain.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
